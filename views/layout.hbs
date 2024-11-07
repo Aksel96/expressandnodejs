@@ -7,8 +7,34 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1>Cabecera Fija</h1>
-    {{{body}}}
+    <header class="bg-light border-bottom">
+      <nav class="navbar navbar-expand-lg navbar-light container">
+        <a  class="navbar-brand" href="/">
+          <img src="images/logo.png" alt="fes aragon" class="logo" >
+        </a>
+        
+        <div class="collapse navbar-collapse" id="navbarNav" >
+          <ul class="navbar-nav ms-auto" >
+            <li class="nav-item" >
+              <a class="nav-link active" href="/libros">Libros</a>
+            </li>
+            <li class="nav-item" >
+              <a class="nav-link active" href="/buscar">Buscar</a>
+            </li>
+            <li class="nav-item" >
+              <a class="nav-link active" href="/nuevo">Crear Libro</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="bg-primary text-white text-center" >
+      <div class="container">
+        {{{body}}}
+      </div>
+    </section>
+    
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
